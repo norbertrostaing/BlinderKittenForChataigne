@@ -5,8 +5,8 @@
   
   "version":"1.0.0",
   "description":"BlinderKitten commands from Chataigne !",
-  "url":"",
-  "downloadURL":"",
+  "url":"https://github.com/norbertrostaing/BlinderKittenForChataigne",
+  "downloadURL":"https://github.com/norbertrostaing/BlinderKittenForChataigne/archive/refs/heads/main.zip",
 
   "hasInput":false,
   "hasOutput":true, 
