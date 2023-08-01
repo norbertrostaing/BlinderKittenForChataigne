@@ -40,14 +40,14 @@ function cuelist_load (id, cueNum) {
     local.send(address);
 }
 
-function cuelist_flash (id) {
+function cuelist_flash (id, val) {
     var address = "/cuelist/"+id+"/flash";
-    local.send(address);
+    local.send(address, val);
 }
 
-function cuelist_swop (id) {
+function cuelist_swop (id, val) {
     var address = "/cuelist/"+id+"/swop";
-    local.send(address);
+    local.send(address, val);
 }
 
 function cuelist_loadandgo (id) {

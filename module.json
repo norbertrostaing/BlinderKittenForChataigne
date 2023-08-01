@@ -13,14 +13,17 @@
 
   "hideDefaultCommands":false,
   
-  "defaults":
-  {	
+  "defaults": {
     "autoAdd":false,
-    "oscInput":
-    {
-      "localPort":42001
+    "OSC Outputs": {
+      "OSC Output": {
+        "local" : false,
+        "remotePort" : 42000,
+        "listenToFeedback":false
+      }
     }
   },
+  
 
   "parameters":
   {
@@ -167,6 +170,15 @@
           "type":"Integer",
           "min":1,
           "default":1
+        },
+        "Action":
+        {
+          "type":"Enum",
+          "options":
+            {
+              "Press":1,
+              "Release":0,
+            }
         }
       }
     }, 
@@ -181,6 +193,15 @@
           "type":"Integer",
           "min":1,
           "default":1
+        },
+        "Action":
+        {
+          "type":"Enum",
+          "options":
+            {
+              "Press":1,
+              "Release":0,
+            }
         }
       }
     }, 
