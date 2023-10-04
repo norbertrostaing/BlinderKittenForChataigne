@@ -75,6 +75,11 @@ function cuelist_flashLevel (id, level) {
     local.send(address, level);
 }
 
+function cuelist_chaserspeed (id, level) {
+    var address = "/cuelist/"+id+"/chaserspeed";
+    local.send(address, level);
+}
+
 function cuelist_taptempo (id) {
     var address = "/cuelist/"+id+"/taptempo";
     local.send(address);
@@ -90,14 +95,14 @@ function effect_stop (id) {
     local.send(address);
 }
 
-function effect_speed (id) {
+function effect_speed (id, level) {
     var address = "/effect/"+id+"/speed";
-    local.send(address);
+    local.send(address, level);
 }
 
-function effect_size (id) {
+function effect_size (id, level) {
     var address = "/effect/"+id+"/size";
-    local.send(address);
+    local.send(address, level);
 }
 
 function effect_taptempo (id) {
@@ -115,14 +120,14 @@ function carousel_stop (id) {
     local.send(address);
 }
 
-function carousel_speed (id) {
+function carousel_speed (id, level) {
     var address = "/carousel/"+id+"/speed";
-    local.send(address);
+    local.send(address, level);
 }
 
-function carousel_size (id) {
+function carousel_size (id, level) {
     var address = "/carousel/"+id+"/size";
-    local.send(address);
+    local.send(address, level);
 }
 
 function carousel_taptempo (id) {

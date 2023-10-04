@@ -3,7 +3,7 @@
   "type":"OSC",
   "path":"Software",
   
-  "version":"1.0.1b1",
+  "version":"1.0.1b2",
   "description":"BlinderKitten commands from Chataigne !",
   "url":"https://github.com/norbertrostaing/BlinderKittenForChataigne",
   "downloadURL":"https://github.com/norbertrostaing/BlinderKittenForChataigne/archive/refs/heads/main.zip",
@@ -298,6 +298,26 @@
           "type":"Float",
           "min":0,
           "max":1,
+          "default":0
+        }
+      }
+    }, 
+    "Cuelist Chaser speed":
+    {
+      "menu":"Cuelist",  
+      "callback":"cuelist_chaserspeed",
+      "parameters":
+      {
+        "Id":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Level":
+        {
+          "type":"Float",
+          "min":0,
           "default":0
         }
       }
