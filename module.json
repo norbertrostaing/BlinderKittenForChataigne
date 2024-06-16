@@ -3,7 +3,7 @@
   "type":"OSC",
   "path":"Software",
   
-  "version":"1.0.1b2",
+  "version":"1.0.1b3",
   "description":"BlinderKitten commands from Chataigne !",
   "url":"https://github.com/norbertrostaing/BlinderKittenForChataigne",
   "downloadURL":"https://github.com/norbertrostaing/BlinderKittenForChataigne/archive/refs/heads/main.zip",
