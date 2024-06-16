@@ -50,8 +50,9 @@ function cuelist_swop (id, val) {
     local.send(address, val);
 }
 
-function cuelist_loadandgo (id) {
-    var address = "/cuelist/"+id+"/loadandgo";
+function cuelist_loadandgo (id, cueNum) {
+    var cueAdd = cueNum < 0 ? "" : "/"+cueNum;
+    var address = "/cuelist/"+id+"/loadandgo"+cueAdd;
     local.send(address);
 }
 
