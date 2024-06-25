@@ -177,7 +177,7 @@
           "options":
             {
               "Press":1,
-              "Release":0,
+              "Release":0
             }
         }
       }
@@ -200,7 +200,7 @@
           "options":
             {
               "Press":1,
-              "Release":0,
+              "Release":0
             }
         }
       }
