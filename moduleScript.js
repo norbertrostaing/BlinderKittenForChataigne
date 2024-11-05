@@ -136,3 +136,53 @@ function carousel_taptempo (id) {
     local.send(address);
 }
 
+function bundle_start (id) {
+    var address = "/bundle/"+id+"/start";
+    local.send(address);
+}
+
+function bundle_stop (id) {
+    var address = "/bundle/"+id+"/stop";
+    local.send(address);
+}
+
+function bundle_speed (id, level) {
+    var address = "/bundle/"+id+"/speed";
+    local.send(address, level);
+}
+
+function bundle_size (id, level, size, HTP, LTP, flash ) {
+    var address = "/bundle/"+id+"/size";
+    local.send(address, level, size, HTP, LTP, flash);
+}
+
+function bundle_taptempo (id) {
+    var address = "/bundle/"+id+"/taptempo";
+    local.send(address);
+}
+
+function virtualButton (page, col, row, pressed) {
+    var address = "/virtbutton/"+page+"/"+col+"/"+row+"/";
+    local.send(address, pressed);
+}
+
+function virtualAbove (page, col, row, pressed) {
+    var address = "/virtabove/"+page+"/"+col+"/"+row+"/";
+    local.send(address, pressed);
+}
+
+function virtualBelow (page, col, row, pressed) {
+    var address = "/virtbelow/"+page+"/"+col+"/"+row+"/";
+    local.send(address, pressed);
+}
+
+function virtualRotary (page, col, row, val) {
+    var address = "/virtrotary/"+page+"/"+col+"/"+row+"/";
+    local.send(address, val);
+}
+
+function virtualFader (page, col, val) {
+    var address = "/virtfader/"+page+"/"+col+"/";
+    local.send(address, val);
+}
+

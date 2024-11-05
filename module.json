@@ -3,7 +3,7 @@
   "type":"OSC",
   "path":"Software",
   
-  "version":"1.0.1b3",
+  "version":"1.0.1b4",
   "description":"BlinderKitten commands from Chataigne !",
   "url":"https://github.com/norbertrostaing/BlinderKittenForChataigne",
   "downloadURL":"https://github.com/norbertrostaing/BlinderKittenForChataigne/archive/refs/heads/main.zip",
@@ -25,28 +25,12 @@
   },
   
 
-  "parameters":
-  {
-    "Module param":
-    {
-      "type":"Integer"
-    }
-  },
-
   "hideDefaultParameters": [ "autoAdd", "oscInput/localPort"],
 
   "scripts": 
   [
     "moduleScript.js"
   ],
-
-  "values":
-  {
-    "Module value":
-    {
-      "type":"Float"
-    }
-  },
 
   "commands":
   {
@@ -501,6 +485,261 @@
           "default":1
         }
       }
-    }    
+    },    
+    "Bundle start":
+    {
+      "menu":"Bundle",  
+      "callback":"bundle_start",
+      "parameters":
+      {
+        "Id":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        }
+      }
+    }, 
+    "Bundle stop":
+    {
+      "menu":"Bundle",  
+      "callback":"bundle_stop",
+      "parameters":
+      {
+        "Id":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        }
+      }
+    }, 
+    "Bundle speed":
+    {
+      "menu":"Bundle",  
+      "callback":"bundle_speed",
+      "parameters":
+      {
+        "Id":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Level":
+        {
+          "type":"Float",
+          "min":0,
+          "default":0
+        }
+      }
+    }, 
+    "Bundle size":
+    {
+      "menu":"Bundle",  
+      "callback":"bundle_size",
+      "parameters":
+      {
+        "Id":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Level":
+        {
+          "type":"Float",
+          "min":0,
+          "max":1,
+          "default":0
+        },
+        "Size":
+        {
+          "type":"Boolean",
+          "default":true
+        },
+        "HTP":
+        {
+          "type":"Boolean",
+          "default":true
+        },
+        "LTP":
+        {
+          "type":"Boolean",
+          "default":false
+        },
+        "Flash":
+        {
+          "type":"Boolean",
+          "default":false
+        }
+      }
+    }, 
+    "Bundle taptempo":
+    {
+      "menu":"Bundle",  
+      "callback":"bundle_taptempo",
+      "parameters":
+      {
+        "Id":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        }
+      }
+    },
+    "Virtual Button":
+    {
+      "menu":"Virtual",  
+      "callback":"virtualButton",
+      "parameters":
+      {
+        "Page":
+        {
+          "type":"Integer",
+          "min":0,
+          "default":0
+        },
+        "Col":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Row":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Pressed":
+        {
+          "type":"Boolean"
+        }
+      }
+    },
+    "Virtual Above Button":
+    {
+      "menu":"Virtual",  
+      "callback":"virtualAbove",
+      "parameters":
+      {
+        "Page":
+        {
+          "type":"Integer",
+          "min":0,
+          "default":0
+        },
+        "Col":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Row":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Pressed":
+        {
+          "type":"Boolean"
+        }
+      }
+    },
+    "Virtual Below Button":
+    {
+      "menu":"Virtual",  
+      "callback":"virtualBelow",
+      "parameters":
+      {
+        "Page":
+        {
+          "type":"Integer",
+          "min":0,
+          "default":0
+        },
+        "Col":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Row":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Pressed":
+        {
+          "type":"Boolean"
+        }
+      }
+    },
+
+    "Virtual Rotary":
+    {
+      "menu":"Virtual",  
+      "callback":"virtualRotary",
+      "parameters":
+      {
+        "Page":
+        {
+          "type":"Integer",
+          "min":0,
+          "default":0
+        },
+        "Col":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Row":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Value":
+        {
+          "type":"Float",
+          "min":0,
+          "max":1,
+          "default":0
+        }
+      }
+    },
+    "Virtual Fader":
+    {
+      "menu":"Virtual",  
+      "callback":"virtualFader",
+      "parameters":
+      {
+        "Page":
+        {
+          "type":"Integer",
+          "min":0,
+          "default":0
+        },
+        "Col":
+        {
+          "type":"Integer",
+          "min":1,
+          "default":1
+        },
+        "Value":
+        {
+          "type":"Float",
+          "min":0,
+          "max":1,
+          "default":0
+        }
+      }
+    }
+
   }
 }
